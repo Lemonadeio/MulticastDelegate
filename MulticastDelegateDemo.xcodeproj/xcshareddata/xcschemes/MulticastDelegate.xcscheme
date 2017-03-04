@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0820"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF59E1CC1C318EAE002CB071"
-               BuildableName = "MulticastDelegateDemo.app"
-               BlueprintName = "MulticastDelegateDemo"
+               BlueprintIdentifier = "DD63BE051E6A452C00157D11"
+               BuildableName = "MulticastDelegate.framework"
+               BlueprintName = "MulticastDelegate"
                ReferencedContainer = "container:MulticastDelegateDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -32,9 +32,9 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "CF59E1E01C318EAE002CB071"
-               BuildableName = "MulticastDelegateDemoTests.xctest"
-               BlueprintName = "MulticastDelegateDemoTests"
+               BlueprintIdentifier = "DD63BE0D1E6A452C00157D11"
+               BuildableName = "MulticastDelegateTests.xctest"
+               BlueprintName = "MulticastDelegateTests"
                ReferencedContainer = "container:MulticastDelegateDemo.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF59E1CC1C318EAE002CB071"
-            BuildableName = "MulticastDelegateDemo.app"
-            BlueprintName = "MulticastDelegateDemo"
+            BlueprintIdentifier = "DD63BE051E6A452C00157D11"
+            BuildableName = "MulticastDelegate.framework"
+            BlueprintName = "MulticastDelegate"
             ReferencedContainer = "container:MulticastDelegateDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -61,16 +61,15 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF59E1CC1C318EAE002CB071"
-            BuildableName = "MulticastDelegateDemo.app"
-            BlueprintName = "MulticastDelegateDemo"
+            BlueprintIdentifier = "DD63BE051E6A452C00157D11"
+            BuildableName = "MulticastDelegate.framework"
+            BlueprintName = "MulticastDelegate"
             ReferencedContainer = "container:MulticastDelegateDemo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -80,16 +79,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "CF59E1CC1C318EAE002CB071"
-            BuildableName = "MulticastDelegateDemo.app"
-            BlueprintName = "MulticastDelegateDemo"
+            BlueprintIdentifier = "DD63BE051E6A452C00157D11"
+            BuildableName = "MulticastDelegate.framework"
+            BlueprintName = "MulticastDelegate"
             ReferencedContainer = "container:MulticastDelegateDemo.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

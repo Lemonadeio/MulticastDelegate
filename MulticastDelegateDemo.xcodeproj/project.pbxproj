@@ -18,6 +18,10 @@
 		CF59E1F51C341526002CB071 /* DemoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E1F41C341526002CB071 /* DemoService.swift */; };
 		CF59E1F61C341526002CB071 /* DemoService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E1F41C341526002CB071 /* DemoService.swift */; };
 		CF59E1F81C3419C1002CB071 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E1F71C3419C1002CB071 /* ContainerViewController.swift */; };
+		DD63BE0F1E6A452C00157D11 /* MulticastDelegate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD63BE061E6A452C00157D11 /* MulticastDelegate.framework */; };
+		DD63BE141E6A452C00157D11 /* MulticastDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD63BE131E6A452C00157D11 /* MulticastDelegateTests.swift */; };
+		DD63BE161E6A452C00157D11 /* MulticastDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = DD63BE081E6A452C00157D11 /* MulticastDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD63BE1D1E6A454400157D11 /* MulticastDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF59E1F11C318EEC002CB071 /* MulticastDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +31,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = CF59E1CC1C318EAE002CB071;
 			remoteInfo = MulticastDelegateDemo;
+		};
+		DD63BE101E6A452C00157D11 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF59E1C51C318EAE002CB071 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DD63BE051E6A452C00157D11;
+			remoteInfo = MulticastDelegate;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -45,6 +56,12 @@
 		CF59E1F11C318EEC002CB071 /* MulticastDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MulticastDelegate.swift; sourceTree = "<group>"; };
 		CF59E1F41C341526002CB071 /* DemoService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoService.swift; sourceTree = "<group>"; };
 		CF59E1F71C3419C1002CB071 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		DD63BE061E6A452C00157D11 /* MulticastDelegate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MulticastDelegate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD63BE081E6A452C00157D11 /* MulticastDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MulticastDelegate.h; sourceTree = "<group>"; };
+		DD63BE091E6A452C00157D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD63BE0E1E6A452C00157D11 /* MulticastDelegateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MulticastDelegateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD63BE131E6A452C00157D11 /* MulticastDelegateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MulticastDelegateTests.swift; sourceTree = "<group>"; };
+		DD63BE151E6A452C00157D11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +79,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD63BE021E6A452C00157D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD63BE0B1E6A452C00157D11 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD63BE0F1E6A452C00157D11 /* MulticastDelegate.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -71,6 +103,8 @@
 				CF59E1F01C318EB8002CB071 /* Sources */,
 				CF59E1CF1C318EAE002CB071 /* MulticastDelegateDemo */,
 				CF59E1E41C318EAE002CB071 /* MulticastDelegateDemoTests */,
+				DD63BE071E6A452C00157D11 /* MulticastDelegate */,
+				DD63BE121E6A452C00157D11 /* MulticastDelegateTests */,
 				CF59E1CE1C318EAE002CB071 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -80,6 +114,8 @@
 			children = (
 				CF59E1CD1C318EAE002CB071 /* MulticastDelegateDemo.app */,
 				CF59E1E11C318EAE002CB071 /* MulticastDelegateDemoTests.xctest */,
+				DD63BE061E6A452C00157D11 /* MulticastDelegate.framework */,
+				DD63BE0E1E6A452C00157D11 /* MulticastDelegateTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -117,7 +153,36 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		DD63BE071E6A452C00157D11 /* MulticastDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				DD63BE081E6A452C00157D11 /* MulticastDelegate.h */,
+				DD63BE091E6A452C00157D11 /* Info.plist */,
+			);
+			path = MulticastDelegate;
+			sourceTree = "<group>";
+		};
+		DD63BE121E6A452C00157D11 /* MulticastDelegateTests */ = {
+			isa = PBXGroup;
+			children = (
+				DD63BE131E6A452C00157D11 /* MulticastDelegateTests.swift */,
+				DD63BE151E6A452C00157D11 /* Info.plist */,
+			);
+			path = MulticastDelegateTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		DD63BE031E6A452C00157D11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD63BE161E6A452C00157D11 /* MulticastDelegate.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		CF59E1CC1C318EAE002CB071 /* MulticastDelegateDemo */ = {
@@ -155,13 +220,49 @@
 			productReference = CF59E1E11C318EAE002CB071 /* MulticastDelegateDemoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		DD63BE051E6A452C00157D11 /* MulticastDelegate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD63BE1B1E6A452C00157D11 /* Build configuration list for PBXNativeTarget "MulticastDelegate" */;
+			buildPhases = (
+				DD63BE011E6A452C00157D11 /* Sources */,
+				DD63BE021E6A452C00157D11 /* Frameworks */,
+				DD63BE031E6A452C00157D11 /* Headers */,
+				DD63BE041E6A452C00157D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MulticastDelegate;
+			productName = MulticastDelegate;
+			productReference = DD63BE061E6A452C00157D11 /* MulticastDelegate.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DD63BE0D1E6A452C00157D11 /* MulticastDelegateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DD63BE1C1E6A452C00157D11 /* Build configuration list for PBXNativeTarget "MulticastDelegateTests" */;
+			buildPhases = (
+				DD63BE0A1E6A452C00157D11 /* Sources */,
+				DD63BE0B1E6A452C00157D11 /* Frameworks */,
+				DD63BE0C1E6A452C00157D11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DD63BE111E6A452C00157D11 /* PBXTargetDependency */,
+			);
+			name = MulticastDelegateTests;
+			productName = MulticastDelegateTests;
+			productReference = DD63BE0E1E6A452C00157D11 /* MulticastDelegateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CF59E1C51C318EAE002CB071 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Joao Nunes";
 				TargetAttributes = {
@@ -173,6 +274,16 @@
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0800;
 						TestTargetID = CF59E1CC1C318EAE002CB071;
+					};
+					DD63BE051E6A452C00157D11 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XRL3RPBV2A;
+						ProvisioningStyle = Automatic;
+					};
+					DD63BE0D1E6A452C00157D11 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = XRL3RPBV2A;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -191,6 +302,8 @@
 			targets = (
 				CF59E1CC1C318EAE002CB071 /* MulticastDelegateDemo */,
 				CF59E1E01C318EAE002CB071 /* MulticastDelegateDemoTests */,
+				DD63BE051E6A452C00157D11 /* MulticastDelegate */,
+				DD63BE0D1E6A452C00157D11 /* MulticastDelegateTests */,
 			);
 		};
 /* End PBXProject section */
@@ -207,6 +320,20 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		CF59E1DF1C318EAE002CB071 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD63BE041E6A452C00157D11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD63BE0C1E6A452C00157D11 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,6 +365,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DD63BE011E6A452C00157D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD63BE1D1E6A454400157D11 /* MulticastDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DD63BE0A1E6A452C00157D11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD63BE141E6A452C00157D11 /* MulticastDelegateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -245,6 +388,11 @@
 			isa = PBXTargetDependency;
 			target = CF59E1CC1C318EAE002CB071 /* MulticastDelegateDemo */;
 			targetProxy = CF59E1E21C318EAE002CB071 /* PBXContainerItemProxy */;
+		};
+		DD63BE111E6A452C00157D11 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DD63BE051E6A452C00157D11 /* MulticastDelegate */;
+			targetProxy = DD63BE101E6A452C00157D11 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -405,6 +553,94 @@
 			};
 			name = Release;
 		};
+		DD63BE171E6A452C00157D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XRL3RPBV2A;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MulticastDelegate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.lemonade.MulticastDelegate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		DD63BE181E6A452C00157D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CODE_SIGN_IDENTITY = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = XRL3RPBV2A;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MulticastDelegate/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.lemonade.MulticastDelegate;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DD63BE191E6A452C00157D11 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = XRL3RPBV2A;
+				INFOPLIST_FILE = MulticastDelegateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.lemonade.MulticastDelegateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DD63BE1A1E6A452C00157D11 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				DEVELOPMENT_TEAM = XRL3RPBV2A;
+				INFOPLIST_FILE = MulticastDelegateTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = io.lemonade.MulticastDelegateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -434,6 +670,22 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DD63BE1B1E6A452C00157D11 /* Build configuration list for PBXNativeTarget "MulticastDelegate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD63BE171E6A452C00157D11 /* Debug */,
+				DD63BE181E6A452C00157D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		DD63BE1C1E6A452C00157D11 /* Build configuration list for PBXNativeTarget "MulticastDelegateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD63BE191E6A452C00157D11 /* Debug */,
+				DD63BE1A1E6A452C00157D11 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
